@@ -1,19 +1,17 @@
 //Design a piza store that calculates cost with different types of toppings on a base piza.
 
 #include <iostream>
-#include<unordered_set>
 using namespace std;
 
 class BasePiza
 {
     public:
-    
     virtual int cost() = 0;
 };
 
 class Farmhouse : public BasePiza
 {
-      
+    public:  
     int cost()
     {
         return 200;
@@ -23,7 +21,6 @@ class Farmhouse : public BasePiza
 class Margherita : public BasePiza
 {
     public:
-    
     int cost()
     {
         return 100;
@@ -33,7 +30,6 @@ class Margherita : public BasePiza
 class Vegdelight : public BasePiza
 {
     public:
-    
     int cost()
     {
         return 150;
